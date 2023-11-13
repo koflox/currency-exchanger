@@ -1,0 +1,56 @@
+[versions]
+retrofit = "2.9.0"
+okhttp = "4.11.0"
+room = "2.6.0"
+lifecycle = "2.6.2"
+koin = "3.5.0"
+appCompat = "1.6.1"
+kotlinCoroutines = "1.7.3"
+androoid-gradle-plugin = "8.1.2"
+kotlin = "1.9.10"
+junit = "4.13.2"
+ksp = "1.9.10-1.0.13"
+material = "1.10.0"
+composeKotlinCompilerExtension = "1.5.3"
+mockk = "1.13.8"
+composeConstraintlayout = "1.0.1"
+detekt = "1.21.0"
+
+[libraries]
+android-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+app-compat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompat" }
+kotlin-coroutines = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+
+compose-bom = "androidx.compose:compose-bom:2023.10.01"
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-activity = { module = "androidx.activity:activity-compose" }
+compose-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-lifecycle = { module = "androidx.lifecycle:lifecycle-runtime-compose" }
+compose-constraintlayout = { module = "androidx.constraintlayout:constraintlayout-compose", version.ref = "composeConstraintlayout" }
+
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit" }
+retrofit-gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit" }
+okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
+okhttp-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttp" }
+
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
+
+koin = { group = "io.insert-koin", name = "koin-core", version.ref = "koin" }
+koin-android = { group = "io.insert-koin", name = "koin-android", version.ref = "koin" }
+koin-android-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+mockk = { module = "io.mockk:mockk-android", version.ref = "mockk" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test" }
+
+detekt = { module = "io.gitlab.arturbosch.detekt:detekt-formatting", version.ref = "detekt"}
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androoid-gradle-plugin" }
+android-library = { id = "com.android.library" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+org-jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+detekt = { id = "io.gitlab.arturbosch.detekt", version.ref = "detekt" }
